@@ -6,7 +6,7 @@ Who is this for?
 
 Requirements:
 - ModTek Injector.
-- A modified CareerDifficultySettings.json derived from IceRaptor's.
+- A modified CareerDifficultySettings.json derived from FrostRaptor's.
 
 Current Compatabilities:
 - BTA Difficulty Settings (BTA3062 Modpack)
