@@ -1,0 +1,29 @@
+{
+    "TargetID": "CareerDifficultySettings",
+    "Instructions": [
+        {
+			"JSONPath": "$.difficultyList[?(@.ID== 'diff_startingplanet')].Options",
+            "Action": "ArrayAdd",
+            "Value": 
+							{
+					"ID": "diff_Urbie",
+					"Name": "UrbStomped",
+					"TelemetryEventDesc": "",
+					"DifficultyValue": 0,
+					"CareerScoreModifier": 0.6,
+					"DifficultyConstants": [
+						{
+							"ConstantType": "CareerMode",
+							"ConstantName": "StartingSystems",
+							"ConstantValue": "Joppa"
+						},
+						{
+							"ConstantType": "CareerMode",
+							"ConstantName": "StartingRandomMechLists",
+							"ConstantValue": "itemCollection_Mechs_Starting_Urb_Light,itemCollection_Mechs_Starting_Urb_Light,itemCollection_Mechs_Starting_Urb_Light,itemCollection_Mechs_Starting_Urb_Light,itemCollection_Mechs_Starting_Mackie_Medium"
+						}
+					]
+				}
+         }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "TargetID": "CareerDifficultySettings",
+    "Instructions": [
+        {
+			"JSONPath": "$.difficultyList[?(@.ID== 'diff_startingplanet')].Options",
+            "Action": "ArrayAdd",
+            "Value": 
+
+				{
+					"ID": "diff_LAM",
+					"Name": "Flyboy",
+					"TelemetryEventDesc": "",
+					"DifficultyValue": 0,
+					"CareerScoreModifier": 0.6,
+					"DifficultyConstants": [
+						{
+							"ConstantType": "CareerMode",
+							"ConstantName": "StartingSystems",
+							"ConstantValue": "Joppa"
+						},
+						{
+							"ConstantType": "CareerMode",
+							"ConstantName": "StartingRandomMechLists",
+							"ConstantValue": "itemCollection_Mechs_Starting_Hector_Medium,itemCollection_Mechs_Starting_LAM_Light,itemCollection_Mechs_Starting_LAMC_Light,itemCollection_Mechs_Starting_LAMB_Light,itemCollection_Mechs_Starting_LAM_Medium"
+						}
+					]
+				}
+         }
+    ]
+}
